@@ -1086,7 +1086,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 135042484}
-        m_MethodName: OnButtonPress
+        m_MethodName: GetMikeScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

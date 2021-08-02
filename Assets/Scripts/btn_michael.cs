@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class btn_michael : MonoBehaviour
 {
-    int n;
-    public void OnButtonPress()
+    private string codeFile = "code4titleScene";
+    private string sceneName = "mikeScene";
+    GameObject theCode;
+
+    public void GetMikeScene()
     {
-        n++;
-    Debug.Log("Button clicked " + n + " times.");
+        theCode = GameObject.Find(codeFile);
+        LoadDuhScene SceneLoader = theCode.GetComponent<LoadDuhScene>();
+        SceneLoader.duhSceneName = sceneName;
+        SceneLoader.ChangeSceneWithName();
+        Debug.Log("Attempting to load the scene for Michael with name: " + SceneLoader.duhSceneName + ".");
     }
 }
